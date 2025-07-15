@@ -1,0 +1,22 @@
+.summary-box {
+  min-height: 280px;
+  max-height: 500px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.summary-box:empty::before {
+  content: "Your summary will appear here.";
+  color: #888;
+}
+
+.toast {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
